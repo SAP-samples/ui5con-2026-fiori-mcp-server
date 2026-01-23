@@ -1,41 +1,59 @@
-# SAP-samples/repository-template
-This default template for SAP Samples repositories includes files for README, LICENSE, and REUSE.toml. All repositories on github.com/SAP-samples will be created based on this template.
-
-# Containing Files
-
-1. The LICENSE file:
-In most cases, the license for SAP sample projects is `Apache 2.0`.
-
-2. The REUSE.toml file: 
-The [Reuse Tool](https://reuse.software/) must be used for your samples project. You can find the REUSE.toml in the project initial. Please replace the parts inside the single angle quotation marks < > by the specific information for your repository.
-
-3. The README.md file (this file):
-Please edit this file as it is the primary description file for your project. You can find some placeholder titles for sections below.
-
-# [Title]
-<!-- Please include descriptive title -->
-
-<!--- Register repository https://api.reuse.software/register, then add REUSE badge:
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/REPO-NAME)](https://api.reuse.software/info/github.com/SAP-samples/REPO-NAME)
--->
+# Hands-on | Create great UX with AI, SAP Fiori elements and the MCP Server for Fiori 
 
 ## Description
-<!-- Please include SEO-friendly description -->
 
-## Requirements
+This repository contains the material for the SAP UI5con [Hands-on | Create great UX with AI, SAP Fiori elements and the MCP Server for Fiori](https://openui5.org/ui5con/bengaluru2026/index.html).  
 
-## Download and Installation
+***
 
-## Known Issues
-<!-- You may simply state "No known issues. -->
+## Overview
 
-## How to obtain support
-[Create an issue](https://github.com/SAP-samples/<repository-name>/issues) in this repository if you find a bug or have questions about the content.
- 
-For additional support, [ask a question in SAP Community](https://answers.sap.com/questions/ask.html).
+In this hands-on tutorial you will work through a set of exercises that highlight the benefits and capabilities of the **MCP servers developed by SAP** to create and modify SAP Fiori applications with the help of AI coding assistants.
 
-## Contributing
-If you wish to contribute code, offer fixes or improvements, please send a pull request. Due to legal reasons, contributors will be asked to accept a DCO when they create the first pull request to this project. This happens in an automated fashion during the submission process. SAP uses [the standard DCO text of the Linux Foundation](https://developercertificate.org/).
+You will gain comprehensive knowledge of AI assisted full-stack development, and learn how to use AI Clients to kickstart your SAP Fiori elements agentic application development.
 
-## License
-Copyright (c) 2026 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSE) file.
+## Using AI during Agentic app Development
+
+We are using Cline as AI client within SBAS and Anthropic claude-4-sonnet LLM (Large Language Model) throughout the exercises. When developing SAP Fiori applications with LLMs, you may encounter situations where a prompt is not executed as intended, or technical errors occur when calling MCP server tools. Knowing how to approach these issues systematically can save time and prevent disruption. Cline and the choosen LLM are powerful assistants for problem resolution.
+
+### General steps in case of issues:
+
+[Detailed steps and examples of resolving common issues](./exercises/troubleshoot/)
+
+1. Verify connectivity:
+    - Check if your machine has network access.
+    - Confirm that the MCP server is up and running.
+
+2. Approach errors systematically
+    - Pause before panicking
+        - Use natural pauses when the client asks for approval to inspect the current results and chat history.    
+        - Stop execution with the "Cancel" button. You can always proceed from there with a new prompt
+    - Identify the source: Check if the issue is:
+        - CDS compiler error
+        - SQLite/database error
+        - Console/browser runtime error
+
+3. Using the LLM to solve an issue
+    - The LLM occasionally makes mistakes, or forgets required steps leading to error situations
+    - But the LLM can read the terminal output and react to API reponses, and correct error visible there
+    - Other issues, like from browser console output, can be resolved by copy-pasting the full error message into the chat and ask for a fix in a prompt
+    - LLM works best when exact messages are provided rather than manual descriptions.
+
+4. Use Restore Points if Needed
+    - If a solution strategy does not work, you can always restore the files and chat to a previous checkpoint using Cline’s restore functionality.
+
+5. Don’t be afraid to retry an exercise or step after restoring to a checkpoint.
+
+## Exercises
+
+Begin your exercises here. At the end of each section, there is a link to continue to the next section.
+
+- [Getting Started - Setting up your AI Development Environment](./exercises/ex0/)
+
+- [Exercise 1 - Create CAP Project and Fiori List Report App based on Image](./exercises/ex1.0/)
+    - [Exercise 1.1 Enable automatic data loading in List Report](./exercises/ex1.1/)
+    - [Exercise 1.2 Add new column destination to list report table](./exercises/ex1.2/)
+    - [Exercise 1.3 Add Analytical chart to list report page](./exercises/ex1.3/)
+
+- [Exercise 2 - Modify travel object page based on Image](./exercises/ex2.0/)
+    - [Exercise 2.1 Add Custom Section with RichTextEditor Building Block](./exercises/ex2.1/)
