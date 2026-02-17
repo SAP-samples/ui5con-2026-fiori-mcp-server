@@ -59,6 +59,8 @@ Begin your exercises here. At the end of each section, there is a link to contin
 - [Exercise 2 - Modify travel object page based on Image](./exercises/ex2.0/)
     - [Exercise 2.1 Add Custom Section with RichTextEditor Building Block](./exercises/ex2.1/)
 
+- [Exercise 3 - Add Object Page for Booking Details](./exercises/ex3.0/)
+
 ## Code of Conduct
 Please read the [SAP Open Source Code of Conduct](https://github.com/SAP-samples/.github/blob/main/CODE_OF_CONDUCT.md).
 

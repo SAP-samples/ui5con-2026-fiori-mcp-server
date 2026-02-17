@@ -71,3 +71,5 @@
                   id="travelNotesEditor"
                   value="{TravelNotes}" />
       ```
+
+Continue to - [Exercise 3 - Add Object Page for Booking Details](../ex3.0/README.md)

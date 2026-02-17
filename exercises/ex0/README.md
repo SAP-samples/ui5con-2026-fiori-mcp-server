@@ -66,7 +66,7 @@ Drag and drop image(process-travels.png) to Explorer.
 
   <img src="./images/ex0img22.png" alt="cline" width="30%"/>
 
-2. choose `Use your own API Key`.
+2. choose `Bring my own API Key`.
 
   <img src="./images/ex0img7.png" alt="cline choose api key" width="70%"/>
 
