@@ -17,8 +17,11 @@ On the SAP Build landing page, click button **Switch Product** in the top right 
 
 ## Opening the Development Space
 
-Make sure your development space has status running. If stopped, click the start button. <br>
+Make sure development space "AgenticAppDevelopment" has status running. If stopped, click the start button. <br>
 ![Restart Dev Space](images/ex0img4a.png)
+
+### Note: For this hands-on session, please use only the "AgenticAppDevelopment" development space.
+
 Once running, click on the development space name to open it. This can take some time.<br>
 
 ![Enter Dev Space](images/ex0img4.png)
@@ -45,7 +48,7 @@ Click **OK** and your window will reload
 
 ![image](images/ex0img13.png)
 
-Enable Clipboard access to SBAS instance
+Enable Clipboard access to SBAS instance for chrome browser.
 
 ![image](images/ex0img28.png)
 
@@ -76,13 +79,7 @@ Drag and drop image(process-travels.png) to Explorer.
 
   <img src="images/ex0img9.png" alt="image" width="40%"/>
 
-6. **Collapse Mcp responses**
-   - In the **Cline Settings**, Click on the **Feature Settings** section.
-   - Check the option `Collapse MCP Responses`
-
-<img src="./images/ex0img14.png" alt="collapse mcp response" width="40%"/>
-
-7. **Disable Browser Tool Usage**
+6. **Disable Browser Tool Usage**
 
    - In the **Cline Settings**, Click on the **Browser** section.
    - Check the option **Disable browser tool usage**.
@@ -103,6 +100,7 @@ Drag and drop image(process-travels.png) to Explorer.
   - Enable auto-approval for MCP server usage. 
 
   <img src="./images/ex0img21.png" alt="auto approve" width="40%"/>
+  <img src="./images/ex0img21a.png" alt="auto approve" width="40%"/>
 
 ## Summary
 

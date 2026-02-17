@@ -92,13 +92,7 @@ Drag and drop image(process-travels.png) to Explorer.
 
 <img src="images/ex0img9.png" alt="image" width="30%"/>
 
-8. **Collapse Mcp responses**
-   - In the **Cline Settings**, Click on the **Feature Settings** section.
-   - Check the option `Collapse MCP Responses`
-
-<img src="./images/ex0img14.png" alt="collapse mcp response" width="30%"/>
-
-9. **Disable Browser Tool Usage**
+8. **Disable Browser Tool Usage**
 
    - In the **Cline Settings**, Click on the **Browser** section.
    - Check the option **Disable browser tool usage**.
@@ -117,38 +111,41 @@ Drag and drop image(process-travels.png) to Explorer.
    - Configure MCP servers by editing your Cline MCP settings file (`cline_mcp_settings.json`):
    - Copy below content and Save file.
      ```json
-      {
-        "mcpServers": {
-          "fiori-mcp": {
-            "type": "stdio",
-            "timeout": 600,
-            "command": "npx",
-            "args": [
-              "-y",
-              "@sap-ux/fiori-mcp-server@0.4.1"
-            ],
-            "autoApprove": [
-              "search_docs",
-              "get_functionality_details",
-              "list_fiori_apps",
-              "list_functionality"
-            ]
-          },
-          "cds-mcp": {
-            "type": "stdio",
-            "command": "npx",
-            "args": [
-              "-y",
-              "@cap-js/mcp-server"
-            ],
-            "env": {},
-            "autoApprove": [
-              "search_docs",
-              "search_model"
-            ]
+        {
+          "mcpServers": {
+            "fiori-mcp": {
+              "autoApprove": [
+                "search_docs",
+                "get_functionality_details",
+                "list_fiori_apps",
+                "list_functionality",
+                "execute_functionality"
+              ],
+              "timeout": 600,
+              "type": "stdio",
+              "command": "npx",
+              "args": [
+                "-y",
+                "@sap-ux/fiori-mcp-server@0.6.27"
+              ]
+            },
+            "cds-mcp": {
+              "autoApprove": [
+                "search_model",
+                "search_docs"
+              ],
+              "disabled": false,
+              "timeout": 60,
+              "type": "stdio",
+              "command": "npx",
+              "args": [
+                "-y",
+                "@cap-js/mcp-server"
+              ],
+              "env": {}
+            }
           }
         }
-      }
      ```
      - close file `cline_mcp_settings.json`.
 
