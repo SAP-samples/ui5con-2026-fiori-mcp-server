@@ -10,9 +10,11 @@
 
 3. Enter the following prompt in the task input:  
    ```
-   Create a new field "TravelNotes" and add a custom section to the travel object page.
-   This custom section should contain travel notes as a "RichTextEditor" building block.
-   Use fiori mcp.
+   Your task is to visualize the description field of the trip as an rich text editor on the object page of the travel management app. Implement in two steps:
+    1. Add a custom section at the last position of the object page
+    2. Use the rich text editor building block in the new section to show the description field. Ensure each button group for the Rich text editor has an ID
+    Follow the workspace rules and use MCP servers.
+
    ```
 4. Press `Enter` to start the task.
 5. Cline will generate an **Implementation Plan**.
@@ -40,36 +42,6 @@
       Execute prompt 
       ```
       Enable draft mode for travel entity
-      ```
-
-2. Custom section not visible. Execute prompt 
-      ```
-      Travel notes with RichTextEditor not visible
-      ```
-
-3. No data in custom section. Execute prompt 
-      ```
-      Add mock data for travel notes
-      ```
-
-4. Travel notes is not a Rich Text Editor. Execute below prompt and verify code in the xml fragment
-      ```
-      use "RichTextEditorWithMetadata" building block for travel notes. use fiori mcp
-      ```
-
-      ![notrichtext](./images/not-rich-text.png)
-
-      Verify that the Rich Text Editor building block element has been applied in the code by AI as shown below:
-      ```
-            <macros:RichTextEditorWithMetadata
-                  id="travelNotesEditor"
-                  metaPath="TravelNotes" />
-
-            OR
-
-            <macros:RichTextEditor
-                  id="travelNotesEditor"
-                  value="{TravelNotes}" />
       ```
 
 Continue to - [Exercise 3 - Add Object Page for Booking Details](../ex3.0/README.md)
