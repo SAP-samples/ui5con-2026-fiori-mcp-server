@@ -7,7 +7,7 @@ Sl no | Troubleshooting Guide
  2 | [MCP server connection failure](#2-mcp-server-connection-failure)
  3 | [CDS Compile error](#3-cds-compilation-error) 
  4 | [How to reset and start from scratch](#4-how-to-reset-and-start-from-scratch)
- 5 | [Model Claude-4 is Not Responding - Invalid API response](#5-model-anthropic-claude-4-sonnet-is-not-responding)
+ 5 | [Model Claude-4.5 is Not Responding - Invalid API response](#5-model-anthropic-claude-45-sonnet-is-not-responding)
  6 | [SBAS Terminal Timeout Issues](#6-cline-and-sbas-terminal-timeout-issues)
  7 | [Cline Panel is Not Visible](#7-cline-panel-is-not-visible)
  8 | [Hard Reload Browser](#8-hard-reload-browser)
@@ -73,13 +73,13 @@ Sl no | Troubleshooting Guide
 
 ---
 
-### 5. Model `anthropic-claude-4-sonnet` is Not Responding
+### 5. Model `anthropic-claude-4.5-sonnet` is Not Responding
 
    ![model error](./images/model-error.png)
 
-   - If the Claude 4 model throws Invalid API response error. Change model to the `anthropic-claude-3.7-sonnet`.
+   - If the Claude 4.5 model throws Invalid API response error. Change model to the `anthropic-claude-4-sonnet`.
    - Retry your task.
-   - If the issue still exists, try with model `anthropic-claude-3.5-sonnet`
+   - If the issue still exists, try with model `anthropic-claude-3.7-sonnet`
 
    - If the issue still exists, then you can close the current Cline task and change model to `gemini-2.5-pro`.
 
